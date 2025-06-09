@@ -55,6 +55,7 @@ pipeline{
                 }
             }
         }
+}
                 stage ('Deploy to container'){
             steps{
                 sh 'docker run --name vprofile1 -d -p 9090:8080  vprofile:latest'
